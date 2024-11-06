@@ -9,6 +9,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    filter: blur(5px); /* Ajout de l'effet de flou */
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* Rendre l'en-tête semi-transparent pour le contraste */
 }
 
 .logo {
@@ -45,6 +46,11 @@ nav ul li a {
 
 main {
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Rendre le contenu semi-transparent pour le contraste */
+    backdrop-filter: blur(10px); /* Ajouter du flou au contenu principal */
+    max-width: 80%; 
+    margin: auto;
+    border-radius: 10px;
 }
 
 h1 {
@@ -59,7 +65,6 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.8);
-    max-width: 600px;
     text-align: left;
 }
 
