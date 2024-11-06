@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 20px;
     text-align: center;
-    background-image: url(https://dl.dropboxusercontent.com/scl/fi/dx4q84fx0v2jidcu879s6/background.jpg?rlkey=3fuybrnf77oj0v7hio6ok6yrf&st=fv983cr3&dl=0); /* URL directe de l'image */
+    background-image: url('https://dl.dropboxusercontent.com/s/ton-chemin/background.jpg') /* URL directe de l'image */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
