@@ -9,7 +9,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(5px); /* Ajout de l'effet de flou */
+    filter: blur(500px); /* Ajout de l'effet de flou */
 }
 
 header {
