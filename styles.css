@@ -4,16 +4,28 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow: hidden; /* Empêcher le débordement */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('https://i.imgur.com/etHAOKI.jpeg'); /* URL directe de l'image */
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(500px); /* Ajout de l'effet de flou */
+    filter: blur(10px); /* Ajouter l'effet de flou */
+    z-index: -1; /* Placer en arrière-plan */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Placer au-dessus du fond */
 }
 
 header {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,8 +59,7 @@ nav ul li a {
 main {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Rendre le contenu semi-transparent pour le contraste */
-    backdrop-filter: blur(10px); /* Ajouter du flou au contenu principal */
-    max-width: 80%; 
+    max-width: 80%;
     margin: auto;
     border-radius: 10px;
 }
